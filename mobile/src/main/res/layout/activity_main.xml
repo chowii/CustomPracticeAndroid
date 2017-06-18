@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.developingstories.myapplication.MyViewGroup
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.developingstories.myapplication.MyViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
     tools:context="com.developingstories.myapplication.MainActivity"
     android:orientation="vertical"
     android:divider="@color/colorAccent"
-    android:id="@+id/layout"
-    >
+    android:id="@+id/layout">
 
     <Button
         android:id="@+id/sample_text"
@@ -22,5 +22,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"/>
+
+    <com.developingstories.myapplication.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:string="test"
+        custom:stringColor="#FF4081"
+        custom:backgroundColor="#3F51B5"/>
+
 
 </com.developingstories.myapplication.MyViewGroup>
